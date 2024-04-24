@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Report</title>
+    <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Report</h1>
+        <div class="patient-info">
+            <div class="patient-details">
+                <h2>Patient Details</h2>
+                <div class="detail">
+                    <img src="assets/id_icon.jpg" alt="Patient ID" class="icon">
+                    <span class="label">Patient ID:</span>
+                    <span class="value">P001</span>
+                </div>
+                <div class="detail">
+                    <img src="assets/name_icon.png" alt="Patient Name" class="icon">
+                    <span class="label">Name:</span>
+                    <span class="value">Ravi</span>
+                </div>
+                <div class="detail">
+                    <img src="assets/status_icon.png" alt="Transplant Status" class="icon">
+                    <span class="label">Transplant Status:</span>
+                    <span class="value">Transplant Occurred</span>
+                </div>
+                <div class="detail">
+                    <img src="assets/blood_icon.png" alt="Blood Type" class="icon">
+                    <span class="label">Blood Type:</span>
+                    <span class="value">AB+</span>
+                </div>
+                <div class="detail">
+                    <img src="assets/kidney_icon.png" alt="Transplanted Organ" class="icon">
+                    <span class="label">Organ:</span>
+                    <span class="value">Left Kidney</span>
+                </div>
+            </div>
+            <div class="patient-schedule">
+                <h2>Patient Schedule</h2>
+                <div class="schedule-item">
+                    <img src="assets/schedule_icon.png" alt="Transplanted Organ" class="icon">
+                    <span class="date">2023-11-01</span>
+                    <span class="event">Previous Appointment</span>
+                </div>
+                <div class="schedule-item">
+                    <img src="assets/next_schedule.png" alt="Transplanted Organ" class="icon">
+                    <span class="date">2023-11-15</span>
+                    <span class="event">Upcoming Appointment</span>
+                </div>
+
+                <div class="schedule-item">
+                    <img src="assets/date_icon.jpg" alt="Transplanted Organ" class="icon">
+                    <span class="date">2024-03-29</span>
+                    <span class="event">Date of Transplant(if occured)</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="assessment">
+            <h2><img src="assets/mental_health_icon.png" alt="Mental Health Icon" class="icon"> Mental Health Assessment</h2>
+            
+            <div class="assessment-details">
+                <div class="detail">
+                    <span class="label">Type of Assessment:</span>
+                    <span class="value">Pre-transplant</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Response:</span>
+                    <span class="value">The patient reported feeling anxious and stressed.</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Depression Severity:</span>
+                    <span class="value">Mild</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Recommended Action:</span>
+                    <span class="value">Schedule a counseling session.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="charts">
+            <div class="chart" id="depression-chart">
+                <h2>Depression Level Analysis</h2>
+                <div class="bar-chart">
+                    <div class="bar moderate"></div>
+                </div>
+            </div>
+        
+            <div class="chart" id="appointment-chart">
+                <h2>Appointment Schedule for Last 12 Months</h2>
+                <div class="appointment-calendar" id="appointment-calendar"></div>
+            </div>
+            
+        </div> <br> 
+        <div class="chart" id="kidney-health-chart">
+            <h2>Kidney Health Monitoring</h2>
+            <div class="kidney-health">
+                <div class="pktr-status">
+                    <h3>PKTR Status:</h3>
+                    <div class="pktr-value" id="pktr-value"></div>
+                </div>
+                <div class="visual-analysis">
+                    <h3>Visual Analysis:</h3>
+                    <div class="analysis-chart">
+                        <div class="health-bar" id="health-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+  
+
+    <!-- JavaScript for generating appointment schedule chart -->
+    <script src="patient.js"></script>
+</body>
+</html>

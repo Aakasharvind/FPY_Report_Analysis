@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Report</title>
+    <link rel="stylesheet" href="donor.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Donor Report</h1>
+        <div class="donor-info">
+            <div class="donor-details">
+                <h2>Donor Details</h2>
+                <div class="detail">
+                    <img src="assets/id_icon.jpg" alt="Donor ID" class="icon">
+                    <span class="label">Donor ID:</span>
+                    <span class="value">D001</span>
+                </div>
+                <div class="detail">
+                    <img src="assets/name_icon.png" alt="Donor Name" class="icon">
+                    <span class="label">Name:</span>
+                    <span class="value">John Doe</span>
+                </div>
+                <div class="detail">
+                    <img src="assets/status_icon.png" alt="Transplant Status" class="icon">
+                    <span class="label">Transplant Status:</span>
+                    <span class="value">Transplant Occurred</span>
+                </div>
+                <div class="detail">
+                    <img src="assets/blood_icon.png" alt="Blood Type" class="icon">
+                    <span class="label">Blood Type:</span>
+                    <span class="value">AB+</span>
+                </div>
+                <div class="detail">
+                    <img src="assets/kidney_icon.png" alt="Donated Organ" class="icon">
+                    <span class="label">Organ:</span>
+                    <span class="value"> Left Kidney</span>
+                </div>
+            </div>
+            <div class="donor-history">
+                <h2>Donor History</h2>
+                <div class="history-item">
+                    <img src="assets/surgery_icon.png" alt="Surgery" class="icon">
+                    <span class="date">2023-10-15</span>
+                    <span class="event">Donation Surgery</span>
+                </div>
+                <div class="history-item">
+                    <img src="assets/next_schedule.png" alt="Follow-up" class="icon">
+                    <span class="date">2023-10-30</span>
+                    <span class="event">Follow-up Appointment</span>
+                </div>
+
+                <div class="schedule-item">
+                    <img src="assets/date_icon.jpg" alt="Transplanted Organ" class="icon">
+                    <span class="date">2024-03-29</span>
+                    <span class="event">Date of Transplant(if occured)</span>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="assessment">
+            <h2><img src="assets/mental_health_icon.png" alt="Mental Health Icon" class="icon"> Mental Health Assessment</h2>
+            
+            <div class="assessment-details">
+                <div class="detail">
+                    <span class="label">Type of Assessment:</span>
+                    <span class="value">Pre-transplant</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Response:</span>
+                    <span class="value">The patient reported feeling anxious and stressed.</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Depression Severity:</span>
+                    <span class="value">Mild</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Recommended Action:</span>
+                    <span class="value">Schedule a counseling session.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="charts">
+            <div class="chart" id="depression-chart">
+                <h2>Depression Level Analysis</h2>
+                <div class="bar-chart">
+                    <div class="bar moderate"></div>
+                </div>
+            </div>
+        
+            <div class="chart" id="appointment-chart">
+                <h2>Appointment Schedule for Last 12 Months</h2>
+                <div class="appointment-calendar" id="appointment-calendar"></div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- JavaScript for generating appointment schedule chart -->
+    <script src="donor.js"></script>
+    </div>
+</body>
+</html>
